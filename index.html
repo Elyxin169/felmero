@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <h1>
+                Ingyenes tanfolyamok
+            </h1>
+        </div>
+        <div class="row" id="kepek">
+            <div class="col-md-4 slot">
+                <img src="./logo-css3.png" alt="" class="img-fluid">
+                <h3>CSS3</h3>
+            </div>
+            <div class="col-md-4 slot">
+                <img src="./logo-html5.png" alt="" class="img-fluid">
+                <h3>HTML5</h3>
+            </div>
+            <div class="col-md-4 slot">
+                <img src="./bootstrap.png" alt="" class="img-fluid">
+                <h3>Bootstrap</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="keret">
+                <button id="x">X</button>
+                <h2 style="margin-top: 40px;">Hírlevél</h2>
+                <h4 style="color: #888888ff; margin-bottom: 20px;">Íratkozz fel a hírlevelünkre, hogy időben értesülj a
+                    webes technológia újdonságairól.</h4>
+                <form>
+                    <input type="email" name="hirlevelEmail" id="hirlevelEmail">
+                    <input type="submit" value="feliratkozom" id="hirlevelGomb">
+                    <input type="checkbox">
+                    <label style="margin-bottom: 5px;">Elfogadom a feltételeket</label>
+                </form>
+            </div>
+        </div>
+        <h3>Következő fejezet</h3>
+    </div>
+    <!-- kérdőjel nincs -->
+    <!-- <div id="circle">
+
+    </div> -->
+    <style>
+        .container {
+            max-width: 800px;
+        }
+
+        /* #circle {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: lightgreen;
+            transform: translate(calc(100vw - 50px), calc(100vh - 50px));
+        } */
+
+        .slot {
+            padding: 20px;
+            width: calc(100% / 3 - 20px);
+            margin: auto;
+            background-color: lightgreen;
+            box-shadow: 5px 5px 10px #555555ff;
+        }
+
+        .slot h3 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #keret {
+            border: 1px solid black;
+        }
+
+        #kepek {
+            margin-bottom: 40px;
+        }
+
+        #hirlevelEmail {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            height: 40px;
+        }
+
+        #hirlevelGomb {
+            background-color: lightgreen;
+            text-align: center;
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            height: 40px;
+        }
+
+        #x {
+            background-color: #ffffffff;
+            border: none;
+            float: right;
+            margin-top: 3px;
+        }
+
+        @media (max-width: 320px) {
+            .slot {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</body>
+
+</html>
